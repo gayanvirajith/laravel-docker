@@ -1,0 +1,29 @@
+version: '3'
+services:
+    db:
+        image: mysql:5.7
+        environment:
+            - MYSQL_ROOT_PASSWORD=r00t
+            - MYSQL_DATABASE=test_la
+            - MYSQL_USER=test_la
+            - MYSQL_PASSWORD=test_la
+        networks:
+            - testla
+    web:
+        build: .
+        image: e2l-web
+        environment:
+            - APP_KEY=t24KifsfAH3jmXRwzI91PfTzSfixd6QU
+            - DB_CONNECTION=mysql
+            - DB_HOST=db
+            - DB_PORT=3306
+            - DB_DATABASE=test_la
+            - DB_USERNAME=test_la
+            - DB_PASSWORD=test_la
+        ports:
+            - "80:80"
+        networks:
+            - testla
+
+networks:
+    clix2brix:

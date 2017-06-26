@@ -1,0 +1,26 @@
+default:
+  - dev:frontend
+build:dev:
+  - clean:all
+  - sass
+  - autoprefixer
+  - symlink:angular
+  - symlink:font
+  - symlink:image
+  - symlink:javascript
+  - symlink:json
+  - symlink:stylesheet
+  - symlink:vendor
+build:prod:
+  - shell:composer
+build:doc:
+  - apidoc:compile
+clean:all:
+  - clean:dev
+  - clean:prod
+dev:backend:
+  - concurrent:backend
+dev:frontend:
+  - clean:all
+  - build:dev
+  - concurrent:frontend

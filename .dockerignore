@@ -1,0 +1,4 @@
+.grunt
+.tmp
+node_modules
+.git

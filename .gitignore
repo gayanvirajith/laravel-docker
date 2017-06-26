@@ -1,0 +1,36 @@
+/vendor
+/src/vendor
+/node_modules
+/public/storage
+/src/public/storage
+src/Homestead.yaml
+src/Homestead.json
+.env
+src/composer.phar
+src/composer.lock
+/.idea
+src/public/uploads/certificate/
+src/public/uploads/badges/
+src/public/uploads/badge/
+# generator-langular #
+# dependencies
+src/assets/vendor
+node_modules
+# development
+src/public/angularapp
+src/public/css
+src/public/fonts
+src/public/images
+src/public/js
+src/public/json
+src/public/vendor
+# production
+src/public/angularapp.js
+src/public/styles.css
+src/public/vendors.js
+# docs
+src/api/docs
+# cache
+.tmp
+# End generator-langular #
+*.swp
