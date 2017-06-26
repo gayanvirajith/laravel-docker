@@ -15,18 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/get-200', function () {
-    return response()->json(['message' => 'Hello world'], 200);
-});
-
-Route::get('/get-201', function () {
-    return response()->json(['message' => 'Hello world'], 201);
-});
-
-Route::get('/get-400', function () {
-    return response()->json(['message' => 'Hello world'], 400);
-});
-
-Route::get('/get-500', function () {
-    return response()->json(['message' => 'Hello world'], 500);
-});
+Route::get('/get-200','HomeController@get200');
+Route::get('/get-201','HomeController@get201');
+Route::get('/get-400','HomeController@get400');
+Route::get('/get-500','HomeController@get500');

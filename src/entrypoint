@@ -4,8 +4,8 @@ set -e
 
 echo Starting Clix2Brix
 
-php /app/wait-for-deps.php
+#php /app/wait-for-deps.php
 
-php /app/artisan migrate --force
+#php /app/artisan migrate --force
 
 exec "$@"

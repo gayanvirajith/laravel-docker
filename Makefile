@@ -11,3 +11,4 @@ build:
 
 docker: Dockerfile build
 	docker build -t $(NAME):$(TAG) .
+
