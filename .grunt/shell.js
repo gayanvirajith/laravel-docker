@@ -11,7 +11,7 @@ module.exports = {
       stdout: true,
       stderr: true
     },
-    command: 'cd src;composer install --no-scripts'
+    command: 'cd src;composer install'
   },
   bower: {
     options: {
